@@ -1,4 +1,4 @@
-# secops-siempyl-sumo
+# siempyl-sumo
 
 ## About The Project
 A library for using SumoLogic Cloud SIEM Enterprise (CSE) API
