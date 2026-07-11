@@ -114,14 +114,14 @@ class SignalOperations:
         """
         Updates or Creates enrichment data for a signal
 
-        Eaxample:
+        Example:
             client.update_create_signal_enrichment(signal_id="01189998-8199-9119-7253-uhzruJ0BzoI", enrichment_type="humanp", detail="humanp", reputation="Suspicious", expire_at="2024-05-17T20:44:24Z")
 
         Notes:
             
             Payload:
                 enrichment_type is the title of the enrichment
-                reputation can only use one of the following: Malicous, Not Flagged, Suspicous     
+                reputation can only use one of the following: Malicious, Not Flagged, Suspicious     
 
         Ref:
             https://api.us2.sumologic.com/docs/sec/#operation/SaveSignalEnrichment
@@ -144,7 +144,7 @@ class SignalOperations:
 
     def add_signals_to_insight(self, insight_id: str, signal_ids: str):
         """
-        Adds a list of sginals to an insight
+        Adds a list of signals to an insight
 
         Example:
             client.add_signals_to_insight(insight_id="INSIGHT-9000", signal_ids=["01189998-8199-9119-7253-uhzruJ0BzoI"])

@@ -38,7 +38,7 @@ class CriticalityOperations:
         Requests Sumo API for a specific criticality config given the ID
 
         Examples:
-            client.get_entity_criticality_configs("7")
+            client.get_entity_criticality_config("7")
 
         Notes:
             The ID of a criticality is a numeric value assigned sequentially upon creation

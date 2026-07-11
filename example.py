@@ -44,7 +44,7 @@ def get_entity_example():
 
 def get_entities_example():
     """
-    Use get_entities() to return a multiple records
+    Use get_entities() to return multiple records
     You can specify if you want to expand inventory
     You should provide a query
     Don't forget to escape the dash if it is found in the entity name
@@ -57,7 +57,7 @@ def get_entities_example():
     entities = CLIENT.get_entities(query=f'id:"{entity_type}-{username}"') #CLIENT.get_entitiy(query="id:_username-humanp")
     print(entities)
 
-    #Returns multiple records that matches a tag query
+    #Returns multiple records that match a tag query
     watchlist = "Watchlist:Engineers"
     entities = CLIENT.get_entities(query=f'tag:"{watchlist}"', expand=True) #CLIENT.get_entitiy(query="tag:Watchlist:Engineers")
     print(entities)
